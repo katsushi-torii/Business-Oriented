@@ -1,8 +1,196 @@
 *{
     margin:0;
     padding:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
     --mainColor:#0091ff;
+}
+
+img {
+    width: 15%;
+}
+
+@media (min-width:200px) {
+    .home,
+    .top,
+    .question,
+    .question > figure,
+    .strategies,
+    .strategies > article,
+    .strategies figure,
+    .strategies figcaption,
+    .middle,
+    .middle > article,
+    .middle > figure,
+    .bottom > aside,
+    .aboutus,
+    .aboutus > article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home {
+        padding: 3%;
+    }
+
+    .top h2 {
+        color: dimgray;
+        border-bottom: 3px solid var(--mainColor);
+        padding-bottom: 5%;
+        width: 70%;
+        font-size: 32px;
+    }
+
+    .home,
+    .top,
+    .question,
+    .question > figure,
+    .strategies,
+    .strategies > article,
+    .strategies figure{
+        row-gap: 5vh;
+    }
+
+    
+    .strategies figcaption {
+        row-gap: 2vh;
+    }
+
+    .question a {
+        color: var(--mainColor);
+        text-decoration: none;
+    }
+
+    .question img {
+        width: 100%;
+    }
+
+    .strategies img {
+        width: 50%;
+    }
+
+    .home h3,
+    .home h4 {
+        color: var(--mainColor);
+        font-size: 28px;
+    }
+
+    .middle {
+        row-gap: 3vh;
+    }
+
+    .middle > article {
+        background-color: #f2f2f2;
+        align-items: center;
+        padding: 10%;
+        row-gap: 8vh;
+    }
+
+    .middle i,
+    .middle h4,
+    .middle p {
+        width: 80%;
+    }
+
+    .middle p {
+        line-height: 2.0;
+    }
+
+    .middle i {
+        text-align: center;
+        font-size: 100px;
+        color: #aabbcc;
+    }
+
+    .middle img {
+        width: 100%;
+    }
+
+    .middle > figure {
+        row-gap: 5vh;
+        align-items: center;
+    }
+
+    .bottom {
+        background-image: url(../img/togepi-.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 50vh;
+        padding: 0 3%;
+    }
+
+    .bottom > aside {
+        height: 100%;
+        row-gap: 5vh;
+        padding: 10%;
+        background-color: rgba(220, 220, 220,.5);
+        row-gap: 5vh;
+        align-items: center;
+    }
+
+    .bottom p {
+        line-height: 2.0;
+        font-size: 24px;
+    }
+
+    .bottom a {
+        width: 50%;
+        background-color: var(--mainColor);
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .aboutus {
+        row-gap: 30vh;
+        align-items: center;
+    }
+
+    .aboutus > article {
+        row-gap: 10vh;
+        width: 100%;
+    }
+
+    .aboutus aside {
+        min-height: 50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 3%;
+    }
+
+    .rock {
+        background-image: url(/img/rock.jpg);
+    }
+
+    .pikachu {
+        background-image: url(/img/pikachu.jpg);
+    }
+
+    .fushigidane {
+        background-image: url(/img/fusigidane.jpg);
+    }
+
+    .aboutus span {
+        color: whitesmoke;
+    }
+
+    .aboutus a {
+        width: 50%;
+        background-color: var(--mainColor);
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 3%;
+        text-align: center;
+    }
+
+
+
 }
