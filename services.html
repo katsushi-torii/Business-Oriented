@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/services.css">
     <title>Document</title>
 </head>
 
-<body>
+<body class="services-body">
     <header></header>
     <section class="about-s">
         <article>
@@ -65,15 +66,19 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil commodi, corrupti explicabo fugit ratione fugiat incidunt?</p>
         </article>
     </section>
-    <section class="Contact-s">
+    <section class="contact-s">
+    
         <h4>Contact Information</h4>
         <form action="#">
             <input type="text" name="name" id="name" placeholder="Name">
             <input type="email" name="email" id="email" placeholder="Email">
-            <select name="Subject" id="subject"></select>
-            <textarea name="textarea" id="textarea"></textarea>
+            <select name="Subject" id="subject">
+                <option value="-">Subject</option>
+            </select>
+            <textarea name="textarea" id="textarea" placeholder="Message"></textarea>
             <input type="submit" value="Submit">
         </form>
+
 
     </section>
     <footer>

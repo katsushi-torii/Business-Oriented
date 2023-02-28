@@ -1,11 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin:0;
     padding:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
     --mainColor: #0091ff;
 }
 
+@media (min-width:200px) {
 
+    img {
+        width: 10vh;
+    }
+
+    .services-body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+   .contact-s {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    align-items: center;
+   }
+
+   .contact-s > h4 {
+    font-weight: 500;
+    border-bottom: 2px solid var(--mainColor);
+    padding-bottom: 2vh;
+   }
+
+   .contact-s >form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    width: 90%;
+
+   }
+
+
+
+   .contact-s input,.contact-s select, .contact-s textarea {
+    padding: 3%;
+   }
+
+   .contact-s textarea {
+    height: 20vh;
+    resize: none;
+   }
+  
+
+   .contact-s [type="submit"] {
+    border:none;
+    background-color: var(--mainColor);
+    color: white;
+    width: 50%;
+   }
+}
 
