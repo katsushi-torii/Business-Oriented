@@ -29,7 +29,7 @@
     width: 100%;
    }
 
-   .contact-s > h4, .services-s > h4 {
+   .contact-s > h4, .services-s > h4, .about-s > h4 {
     font-weight: 500;
     border-bottom: 2px solid var(--mainColor);
     padding-bottom: 2vh;
@@ -106,9 +106,7 @@
     height:25vh;
    }
 
-   /* .services-s figure:nth-child(4) img {
- 
-} */
+
    .services-s > blockquote {
     background-color: #7f7f7f;
     color: white;
@@ -128,6 +126,13 @@
    .services-s h6 {
     color: var(--mainColor);
     font-size: 16px;
+   }
+
+   .about-s {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    width: 90%;
    }
 
 
