@@ -190,7 +190,41 @@ img {
         padding: 3%;
         text-align: center;
     }
-
-
-
 }
+
+@media (min-width:700px) {
+
+    .question img{
+        width: 70%;
+    }
+
+    .strategies figure {
+        flex-direction: row;
+        column-gap: 5vh;
+    }
+
+    .strategies img {
+        width: 20%;
+    }
+
+    .middle {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .middle > article,
+    .middle > figure {
+        width: 40%;
+        padding: 3%;
+    }
+
+    .aboutus > article {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 5vh;
+    }
+
+    .aboutus aside {
+        width: 40%;
+    }
