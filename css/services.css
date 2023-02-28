@@ -19,12 +19,14 @@
         display: flex;
         flex-direction: column;
         row-gap: 5vh;
+        align-items: center;
     }
    .contact-s {
     display: flex;
     flex-direction: column;
     row-gap: 4vh;
     align-items: center;
+    width: 100%;
    }
 
    .contact-s > h4 {
@@ -58,6 +60,32 @@
     background-color: var(--mainColor);
     color: white;
     width: 50%;
+   }
+
+   /* FEATURES */
+
+   .features-s {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+    width: 90%;
+   }
+   .features-s > article {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5vh;
+        text-align: center;
+   }
+
+   .features-s i {
+    padding-top: 5vh;
+    font-size: 50px;
+    color: #aabbcc;
+   }
+   .features-s p {
+    padding-bottom: 5vh;
    }
 }
 
