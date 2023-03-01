@@ -194,8 +194,12 @@ img {
 
 @media (min-width:700px) {
 
-    .question img{
+    .question {
         width: 70%;
+    }
+
+    .strategies {
+        width: 85%;
     }
 
     .strategies figure {
@@ -219,6 +223,14 @@ img {
         padding: 3%;
     }
 
+    .bottom {
+        background-image: none;
+    }
+
+    .bottom aside {
+        background-color: transparent;
+    }
+
     .aboutus > article {
         flex-direction: row;
         flex-wrap: wrap;
@@ -228,3 +240,9 @@ img {
     .aboutus aside {
         width: 40%;
     }
+
+    .aboutus a {
+        width: 20%;
+        padding: 2%;
+    }
+}
