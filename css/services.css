@@ -47,6 +47,7 @@
 
    .contact-s input,.contact-s select, .contact-s textarea {
     padding: 3%;
+    border: 1px solid #d7dce1;
    }
 
    .contact-s textarea {
@@ -134,6 +135,26 @@
     row-gap: 5vh;
     width: 90%;
    }
+
+
+}
+
+@media (min-width:600px) {
+
+    .contact-s {
+        row-gap: 10vh;
+    }
+    .contact-s >form {
+        width: 70%;
+    }
+
+    .features-s p {
+        padding: 8vh;
+       }
+
+       .features-s i {
+        padding-top: 10vh;
+       }
 
 
 }
