@@ -33,6 +33,7 @@
     font-weight: 500;
     border-bottom: 2px solid var(--mainColor);
     padding-bottom: 2vh;
+    text-align: center;
    }
 
    .contact-s >form {
@@ -98,7 +99,7 @@
     text-align: center;
    }
 
-   .services-s figure:nth-child(4) {
+   .services-s figure:last-child{
         background-color: #f2f2f2;
    }
 
@@ -107,11 +108,19 @@
     height:25vh;
    }
 
+   .block {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 5vh;
+    text-align: center;
+   }
 
-   .services-s > blockquote {
+
+   .block > blockquote {
     background-color: #7f7f7f;
     color: white;
-    padding: 10%;
+    padding: 7%;
     line-height: 1.5;
    }
 
@@ -120,6 +129,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     padding: 5%;
     row-gap: 2vh;
    }
@@ -155,6 +165,57 @@
        .features-s i {
         padding-top: 10vh;
        }
+
+       .block {
+       align-items: end;
+       }
+
+       .block > blockquote {
+        width: 70%;
+       }
+
+  
+
+       .services-s figure:last-child{
+        width: 60%;
+   }
+
+   .services-s img {
+    width: 40%;
+    height:30vh;
+   }
+
+   .services-s figure:last-child img {
+    width: 100%;
+
+   }
+
+   .services-s figure:last-child figcaption {
+    padding: 5%;
+
+   }
+
+   .services-s figure:not(:last-child) {
+    display: flex;
+    column-gap: 5vh;
+   }
+
+ 
+
+   .services-s figcaption {
+    text-align: left;
+    align-items: start;
+    justify-content: center;
+    padding: 0;
+  
+   }
+
+   .services-body {
+    row-gap: 25vh;
+   }
+
+
+   
 
 
 }
