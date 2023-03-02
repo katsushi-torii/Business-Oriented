@@ -179,7 +179,7 @@ img {
         color: whitesmoke;
     }
 
-    .aboutus a {
+    .aboutus > a {
         width: 50%;
         background-color: var(--mainColor);
         color: whitesmoke;
@@ -231,26 +231,70 @@ img {
     .aboutus > article {
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 5vh;
+        column-gap: 2vh;
     }
 
-    /* .aboutus aside {
+    .aboutus aside {
+        display: flex;
+        position: relative;
+        /* align-items: flex-end; */
+        overflow: hidden;
+        min-height: 50vh;
+        width: 49%;
+        padding: 0;
+    }
+
+    .aboutus span {
         position: absolute;
-        height: 0%;
-        width: 100%;
+        z-index: 1;
+    }
+
+    .aboutus section {
+        display: none;
+        position: absolute;
         z-index: 2;
-        background-color: rgba(0,100,100,.7);
-        transition: .6s;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(220, 220, 220,.5);
+        transition: .6s; 
     }
 
     .aboutus section > article {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        column-gap: 4vh;
+        width: 100%;
         justify-content: center;
-        row-gap: 3vh;
-        transition: .6s;
-    } */
+        align-items: center;
+    }
+
+    .aboutus article > a {
+        text-decoration: none;
+        width: 5vh;
+        height: 5vh;
+        border: 3px solid black;
+        color: black;
+        border-radius: 50%;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutus aside:hover section {
+        display: flex;
+        animation-name: grow;
+        animation-duration: .6s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes grow {
+        from {
+            transform: translateY(50vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
 
     .aboutus > a {
         width: 20%;
@@ -292,6 +336,6 @@ img {
     }
 
     .aboutus aside {
-        width: 25%;
+        width: 32%;
     }
 }
