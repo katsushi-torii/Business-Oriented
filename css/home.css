@@ -159,6 +159,10 @@ img {
         padding: 3%;
     }
 
+    .aboutus section {
+        display: none;
+    }
+
     .rock {
         background-image: url(/img/rock.jpg);
     }
@@ -231,10 +235,24 @@ img {
     }
 
     .aboutus aside {
-        width: 40%;
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        z-index: 2;
+        background-color: rgba(0,100,100,.7);
+        transition: .6s;
     }
 
-    .aboutus a {
+    .aboutus  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3vh;
+        transition: .6s;
+    }
+
+    .aboutus > a {
         width: 20%;
         padding: 2%;
     }
