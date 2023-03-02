@@ -247,6 +247,7 @@ img {
     .aboutus span {
         position: absolute;
         z-index: 1;
+        padding-bottom: 5%;
     }
 
     .aboutus section {
