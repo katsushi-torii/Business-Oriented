@@ -6,3 +6,46 @@
     padding:0;
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (min-width:200px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        row-gap: 4vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    
+    footer >p> a {
+        color: #0091ff;
+        text-decoration: none;
+    }
+    
+    footer >ul {
+        display: flex;
+        justify-content: end;
+        column-gap: 5vh;
+    }
+    
+    footer li {
+        display: flex;
+    }
+    
+    footer > ul a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #aabbcc;
+    }
+}
+
+@media(min-width:600px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer > p {
+        width: 60%;
+    }
+}
