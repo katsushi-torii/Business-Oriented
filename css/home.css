@@ -234,7 +234,7 @@ img {
         column-gap: 5vh;
     }
 
-    .aboutus aside {
+    /* .aboutus aside {
         position: absolute;
         height: 0%;
         width: 100%;
@@ -243,14 +243,14 @@ img {
         transition: .6s;
     }
 
-    .aboutus  {
+    .aboutus section > article {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         row-gap: 3vh;
         transition: .6s;
-    }
+    } */
 
     .aboutus > a {
         width: 20%;
